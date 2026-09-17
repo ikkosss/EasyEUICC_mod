@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="compatibility_check">Проверка совместимости</string>
+    <string name="open_sim_toolkit">Открыть меню SIM-карты (STK)</string>
+    <string name="shortcut_sim_toolkit">Меню SIM-карты</string>
+    <string name="shortcut_sim_toolkit_with_slot">Меню SIM-карты №%d</string>
+
+    <!-- Toast -->
+    <string name="toast_ara_m_copied">ARA-M SHA-1 скопирован в буфер обмена</string>
+    <string name="toast_prompt_to_enable_sim_toolkit">Включите приложение «%s»</string>
+
+    <!-- Quick Compatibility -->
+    <string name="quick_compatibility">Быстрая проверка совместимости</string>
+    <string name="quick_compatibility_compatible">Ваш смартфон может управлять картами, совместимыми с %s</string>
+    <string name="quick_compatibility_not_compatible">Ваш смартфон несовместим с %s</string>
+    <string name="quick_compatibility_not_compatible_but_usb">Ваш смартфон не полностью совместим с %s. Но вы всё равно можете использовать USB-считыватель смарт-карт и получить почти все возможности.</string>
+    <string name="quick_compatibility_result_slots">Доступные слоты: %s</string>
+    <string name="quick_compatibility_result_slots_isdr">Доступ к ISD-R: %s</string>
+    <string name="quick_compatibility_result_notes">Примечание: эти результаты приведены только для справки. Даже если слот SIM не указан выше, он <i>может</i> оказаться совместимым после установки в него SIM-карты.</string>
+    <string name="quick_compatibility_result_notes_incompatible">Примечание: если сейчас SIM-карта не установлена, вставьте любую SIM-карту и повторите проверку совместимости.</string>
+    <string name="quick_compatibility_button_continue">Продолжить</string>
+    <string name="quick_compatibility_skip">Больше не показывать это сообщение</string>
+    <string name="quick_compatibility_unknown">Неизвестно</string>
+</resources>
