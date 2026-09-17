@@ -43,12 +43,14 @@ class UnprivilegedCustomizableTextProvider(private val context: Context) : Defau
                 .build()
         }
 
+    // Slot labels are shown 1-based, matching how the OMAPI readers ("SIM1", "SIM2") and the
+    // phone itself number the SIM slots. Only the label is offset; logicalSlotId stays 0-based.
     override fun formatNonUsbChannelName(logicalSlotId: Int): String =
-        context.getString(R.string.channel_name_format_unpriv, logicalSlotId)
+        context.getString(R.string.channel_name_format_unpriv, logicalSlotId + 1)
 
     override fun formatNonUsbChannelNameWithSeId(
         logicalSlotId: Int,
         seId: EuiccChannel.SecureElementId
     ): String =
-        context.getString(R.string.channel_name_format_unpriv_se, logicalSlotId, seId.id)
+        context.getString(R.string.channel_name_format_unpriv_se, logicalSlotId + 1, seId.id)
 }

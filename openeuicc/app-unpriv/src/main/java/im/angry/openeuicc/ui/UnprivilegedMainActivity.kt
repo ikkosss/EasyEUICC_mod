@@ -59,7 +59,7 @@ class UnprivilegedMainActivity : MainActivity(), UnprivilegedEuiccContextMarker 
                 addShortcut(intent, index, label)
                 break
             }
-            val label = getString(R.string.shortcut_sim_toolkit_with_slot, index)
+            val label = getString(R.string.shortcut_sim_toolkit_with_slot, index + 1)
             addShortcut(intent, index, label)
         }
     }
