@@ -7,6 +7,19 @@
     <string name="shortcut_sim_toolkit">SIM Toolkit</string>
     <string name="shortcut_sim_toolkit_with_slot">SIM Toolkit #%d</string>
 
+    <!-- Slot access diagnostics on the "no eUICC" placeholder -->
+    <string name="no_euicc_diagnostics_title">Slot access diagnostics:</string>
+    <string name="no_euicc_diagnostics_omapi_unavailable">OMAPI (android.se.omapi) is unavailable on this device.</string>
+    <string name="no_euicc_diagnostics_omapi_error">OMAPI could not be reached: %s</string>
+    <string name="no_euicc_diagnostics_no_readers">OMAPI reports no SIM reader on this device.</string>
+    <string name="no_euicc_diagnostics_slot_empty">no card detected</string>
+    <string name="no_euicc_diagnostics_slot_ok">access granted (ISD-R %s)</string>
+    <string name="no_euicc_diagnostics_slot_denied">access denied by the card: its ARA-M access rules do not list this build\'s signature</string>
+    <string name="no_euicc_diagnostics_slot_no_isdr">card present, but no ISD-R applet (not an eUICC)</string>
+    <string name="no_euicc_diagnostics_slot_error">error: %s</string>
+    <string name="no_euicc_diagnostics_signature">SHA-1 of this build\'s signature: %s</string>
+    <string name="no_euicc_diagnostics_hint_unofficial">A card that only allows the official EasyEUICC signature rejects any self-signed build. Use the official release, a card whose ARA-M contains the hash above, or a USB CCID reader.</string>
+
     <!-- Settings -->
     <string name="pref_developer_ara_m" translatable="false">ARA-M SHA-1</string>
     <string name="pref_info_website_url" translatable="false">https://easyeuicc.org</string>
