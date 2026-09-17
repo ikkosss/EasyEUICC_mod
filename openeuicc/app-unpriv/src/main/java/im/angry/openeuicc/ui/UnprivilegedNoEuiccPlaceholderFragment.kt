@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.pm.PackageManager.GET_SIGNING_CERTIFICATES
 import android.os.Bundle
 import android.se.omapi.Reader
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +20,10 @@ import kotlinx.coroutines.withContext
 import java.security.MessageDigest
 
 class UnprivilegedNoEuiccPlaceholderFragment : Fragment(), UnprivilegedEuiccContextMarker {
+    companion object {
+        const val TAG = "NoEuiccPlaceholder"
+    }
+
     private val diagnostics: TextView by lazy {
         requireView().requireViewById(R.id.no_euicc_diagnostics)
     }
@@ -55,12 +60,17 @@ class UnprivilegedNoEuiccPlaceholderFragment : Fragment(), UnprivilegedEuiccCont
      * by signing certificate hash (ARA-M) and does not know this build's certificate.
      * Without this report that case is indistinguishable from an empty SIM slot.
      */
-    private suspend fun buildDiagnostics(): String {
-        val service = try {
-            connectSEService(requireContext())
-        } catch (e: Exception) {
-            return getString(R.string.no_euicc_diagnostics_omapi_error, e.javaClass.simpleName)
-        }
+    private suspend fun buildDiagnostics(): String = try {
+        collectDiagnostics()
+    } catch (e: Exception) {
+        // Vendor OMAPI implementations are known to misbehave in creative ways; a broken
+        // diagnostic report must never take the whole screen down with it
+        Log.w(TAG, "Slot diagnostics failed", e)
+        getString(R.string.no_euicc_diagnostics_omapi_error, e.javaClass.simpleName)
+    }
+
+    private suspend fun collectDiagnostics(): String {
+        val service = connectSEService(requireContext())
 
         try {
             if (!service.isConnected) {
@@ -100,11 +110,10 @@ class UnprivilegedNoEuiccPlaceholderFragment : Fragment(), UnprivilegedEuiccCont
      * Returns the human-readable state of one SIM slot, plus whether access was denied by the card.
      */
     private fun probeReader(reader: Reader, isdrAidList: List<ByteArray>): Pair<String, Boolean> {
-        if (!reader.isSecureElementPresent) {
-            return Pair(getString(R.string.no_euicc_diagnostics_slot_empty), false)
-        }
-
         val session = try {
+            if (!reader.isSecureElementPresent) {
+                return Pair(getString(R.string.no_euicc_diagnostics_slot_empty), false)
+            }
             reader.openSession()
         } catch (e: Exception) {
             return Pair(
