@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_euicc">На этом устройстве не найдено съёмных карт eSIM, доступных этому приложению. Вставьте совместимую карту или подключите USB-считыватель.</string>
+    <string name="no_profile">На этой eSIM пока нет профилей.</string>
+
+    <string name="notification_help">Справка</string>
+
+    <string name="profile_reload_slots">Обновить слоты</string>
+    <string name="profile_no_enabled_profile">Неизвестно</string>
+
+    <string name="channel_name_format">Логический слот %d</string>
+    <string name="channel_name_format_se">Логический слот %1$d, SE %2$d</string>
+    <string name="channel_name_format_usb">USB-считыватель</string>
+    <string name="channel_name_format_usb_se">USB-считыватель, SE %d</string>
+
+    <!-- Profile -->
+    <string name="profile_state_enabled">Включён</string>
+    <string name="profile_state_disabled">Отключён</string>
+    <string name="profile_provider">Оператор:</string>
+    <string name="profile_class">Класс:</string>
+    <string name="profile_class_testing">Тестовый</string>
+    <string name="profile_class_provisioning">Служебный</string>
+    <string name="profile_class_operational">Рабочий</string>
+
+    <string name="profile_enable">Включить</string>
+    <string name="profile_disable">Отключить</string>
+    <string name="profile_delete">Удалить</string>
+    <string name="profile_rename">Переименовать</string>
+
+    <string name="profile_switch_timeout">Истекло время ожидания переключения профилей на чипе eSIM. Возможно, это ошибка прошивки модема вашего телефона. Попробуйте включить и выключить режим полёта, перезапустить приложение или перезагрузить телефон.</string>
+    <string name="profile_switch_did_not_refresh">Операция выполнена успешно, но модем телефона отказался обновить данные. Чтобы использовать новый профиль, возможно, придётся включить и выключить режим полёта или перезагрузить устройство.</string>
+
+    <string name="toast_profile_enable_failed">Не удалось переключиться на новый профиль eSIM.</string>
+    <string name="toast_profile_enable_cross_class">Чтобы переключиться на этот профиль, сначала отключите вручную профиль, включённый в данный момент.</string>
+    <string name="toast_profile_delete_confirm_text_mismatched">Текст подтверждения не совпадает</string>
+    <string name="toast_euicc_memory_reset_confirm_text_mismatched">Текст подтверждения не совпадает</string>
+    <string name="toast_euicc_memory_reset_finished">Этот чип стёрт</string>
+    <string name="toast_iccid_copied">ICCID скопирован в буфер обмена</string>
+    <string name="toast_sn_copied">Серийный номер скопирован в буфер обмена</string>
+    <string name="toast_eid_copied">EID скопирован в буфер обмена</string>
+    <string name="toast_atr_copied">ATR скопирован в буфер обмена</string>
+
+    <string name="usb_permission">Разрешить доступ к USB</string>
+    <string name="usb_permission_needed">Для доступа к USB-считывателю смарт-карт нужно разрешение.</string>
+    <string name="usb_failed">Не удалось подключиться к eSIM через USB-считыватель смарт-карт.</string>
+
+    <string name="task_notification">Длительные операции</string>
+    <string name="task_profile_download">Загрузка профиля eSIM</string>
+    <string name="task_profile_download_failure">Не удалось загрузить профиль eSIM</string>
+    <string name="task_profile_rename">Переименование профиля eSIM</string>
+    <string name="task_profile_rename_failure">Не удалось переименовать профиль eSIM</string>
+    <string name="task_profile_delete">Удаление профиля eSIM</string>
+    <string name="task_profile_delete_failure">Не удалось удалить профиль eSIM</string>
+    <string name="task_profile_switch">Переключение профиля eSIM</string>
+    <string name="task_profile_switch_failure">Не удалось переключить профиль eSIM</string>
+    <string name="task_euicc_memory_reset">Стирание чипа eSIM</string>
+    <string name="task_euicc_memory_reset_failure">Не удалось стереть чип eSIM</string>
+
+    <string name="profile_download">Новая eSIM</string>
+    <string name="profile_download_server">Сервер (RSP / SM-DP+)</string>
+    <string name="profile_download_code">Код активации</string>
+    <string name="profile_download_confirmation_code">Код подтверждения (необязательно)</string>
+    <string name="profile_download_confirmation_code_required">Код подтверждения (обязательно)</string>
+    <string name="profile_download_imei">IMEI (необязательно)</string>
+
+    <string name="profile_download_no_lpa_string">В буфере обмена нет кода LPA</string>
+    <string name="profile_download_incorrect_lpa_string">Не удалось распознать код LPA</string>
+    <string name="profile_download_incorrect_lpa_string_message">Не удалось распознать QR-код или содержимое буфера обмена как код LPA.</string>
+
+    <string name="download_wizard">Мастер загрузки</string>
+    <string name="download_wizard_back">Назад</string>
+    <string name="download_wizard_next">Далее</string>
+    <string name="download_wizard_low_power">ВНИМАНИЕ: низкий заряд батареи</string>
+    <string name="download_wizard_low_power_content">Из-за внезапного выключения устройства <b>загрузка может неожиданно прерваться</b>.\n\nНажмите «<b>Далее</b>», если вы принимаете этот риск и хотите продолжить загрузку.</string>
+    <string name="download_wizard_slot_removed">Выбранная SIM была извлечена</string>
+    <string name="download_wizard_slot_select">Выберите или подтвердите eSIM, на которую нужно загрузить профиль:</string>
+    <string name="download_wizard_slot_type">Тип:</string>
+    <string name="download_wizard_slot_type_removable">Съёмная</string>
+    <string name="download_wizard_slot_type_internal">Встроенная</string>
+    <string name="download_wizard_slot_type_internal_port">Встроенная, порт %d</string>
+    <string name="download_wizard_slot_active_profile">Активный профиль:</string>
+    <string name="download_wizard_slot_free_space">Свободное место:</string>
+    <string name="download_wizard_method_select">Каким способом загрузить профиль eSIM?</string>
+    <string name="download_wizard_method_qr_code">Отсканировать QR-код камерой</string>
+    <string name="download_wizard_method_gallery">Выбрать QR-код из галереи</string>
+    <string name="download_wizard_method_clipboard">Взять из буфера обмена</string>
+    <string name="download_wizard_method_manual">Ввести вручную</string>
+    <string name="download_wizard_details">Введите или проверьте данные для загрузки eSIM:</string>
+    <string name="download_wizard_progress">Загрузка eSIM…</string>
+    <string name="download_wizard_progress_step_preparing">Подготовка</string>
+    <string name="download_wizard_progress_step_connecting">Установка соединения с сервером</string>
+    <string name="download_wizard_progress_step_authenticating">Аутентификация устройства на сервере</string>
+    <string name="download_wizard_progress_step_downloading">Загрузка профиля eSIM</string>
+    <string name="download_wizard_progress_step_finalizing">Запись профиля eSIM в память</string>
+    <string name="download_wizard_diagnostics">Диагностика ошибки</string>
+    <string name="download_wizard_diagnostics_error_code">Код ошибки: %s</string>
+    <string name="download_wizard_diagnostics_last_http_status">Последний статус HTTP (от сервера): %d</string>
+    <string name="download_wizard_diagnostics_last_http_response">Последний ответ HTTP (от сервера):</string>
+    <string name="download_wizard_diagnostics_last_http_exception">Последняя ошибка HTTP:</string>
+    <string name="download_wizard_diagnostics_last_apdu_response">Последний ответ APDU (от SIM): %s</string>
+    <string name="download_wizard_diagnostics_last_apdu_response_success">Последний ответ APDU (от SIM) — успешный</string>
+    <string name="download_wizard_diagnostics_last_apdu_response_fail">Последний ответ APDU (от SIM) — с ошибкой</string>
+    <string name="download_wizard_diagnostics_last_apdu_exception">Последняя ошибка APDU:</string>
+    <string name="download_wizard_diagnostics_save">Сохранить</string>
+    <string name="download_wizard_diagnostics_file_template">Диагностика от %s</string>
+    <string name="download_wizard_error_iccid_already">Этот профиль eSIM уже есть на вашем чипе eSIM.</string>
+    <string name="download_wizard_error_insufficient_memory">На чипе eSIM недостаточно свободной памяти для загрузки профиля.</string>
+    <string name="download_wizard_error_unsupported_profile">Этот профиль eSIM не поддерживается вашим чипом eSIM.</string>
+    <string name="download_wizard_error_card_internal_error">В чипе eSIM произошла ошибка.</string>
+    <string name="download_wizard_error_eid_not_supported">EID вашего устройства или чипа eSIM не поддерживается оператором.</string>
+    <string name="download_wizard_error_eid_mismatch">Этот профиль eSIM уже был загружен на другое устройство.</string>
+    <string name="download_wizard_error_profile_unreleased">Этот профиль eSIM отозван.</string>
+    <string name="download_wizard_error_profile_unavailable">Этот профиль eSIM больше недоступен.</string>
+    <string name="download_wizard_error_matching_id_refused">Неверный код активации.</string>
+    <string name="download_wizard_error_profile_retries_exceeded">Превышено максимальное число попыток загрузки этого профиля eSIM.</string>
+    <string name="download_wizard_error_confirmation_code_missing">Для загрузки этого профиля нужен код подтверждения.</string>
+    <string name="download_wizard_error_confirmation_code_refused">Введённый код подтверждения неверен.</string>
+    <string name="download_wizard_error_profile_expired">Срок действия этого профиля eSIM истёк.</string>
+    <string name="download_wizard_error_confirmation_code_retries_exceeded">Превышено максимальное число попыток ввода кода подтверждения.</string>
+    <string name="download_wizard_error_unknown_hostname">Неизвестный адрес SM-DP+</string>
+    <string name="download_wizard_error_network_unreachable">Сеть недоступна</string>
+    <string name="download_wizard_error_tls_certificate">Ошибка сертификата TLS: этот профиль eSIM не поддерживается</string>
+    <string name="download_wizard_error_suggest_profile_installed">Вы пытаетесь повторно установить уже загруженный профиль eSIM</string>
+    <string name="download_wizard_error_suggest_insufficient_memory">Удалите неиспользуемые профили eSIM и попробуйте снова</string>
+    <string name="download_wizard_error_suggest_contact_carrier">Обратитесь за помощью к своему оператору.</string>
+    <string name="download_wizard_error_suggest_contact_reissue">Обратитесь к оператору, чтобы он выпустил этот профиль eSIM заново.</string>
+    <string name="download_wizard_error_suggest_network_unreachable">Подключитесь к другой сети (например, переключитесь между Wi-Fi и мобильным интернетом) и попробуйте снова.</string>
+
+    <string name="deep_link_confirmation">Подтверждение перехода по ссылке</string>
+    <string name="deep_link_confirmation_dialog_title">Настройка вашей eSIM</string>
+    <string name="deep_link_confirmation_dialog_description">Некоторые данные устройства, необходимые для настройки, будут отправлены вашему оператору.</string>
+    <string name="deep_link_confirmation_cancel_button">Отмена</string>
+    <string name="deep_link_confirmation_setup_button">Настроить</string>
+    <string name="deep_link_confirmation_unable_to_read_url">Со ссылкой для настройки вашей eSIM возникла проблема. Обратитесь за помощью к оператору.</string>
+
+    <string name="logs_saved_message">Логи сохранены по выбранному пути. Отправить лог через другое приложение?</string>
+
+    <string name="profile_rename_new_name">Новое название</string>
+    <string name="profile_rename_encoding_error">Не удалось закодировать название в UTF-8</string>
+    <string name="profile_rename_too_long">Название длиннее 64 символов</string>
+    <string name="profile_rename_failure">Неизвестная ошибка при переименовании профиля</string>
+
+    <string name="profile_delete_confirm">Удалить профиль %s? Это действие необратимо.\n\nВ зависимости от требований оператора для восстановления удалённой eSIM может потребоваться обращение к оператору или визит в его салон связи.</string>
+    <string name="profile_delete_confirm_input">Введите здесь «%s», чтобы подтвердить удаление</string>
+
+    <string name="profile_notifications">Уведомления</string>
+    <string name="profile_notifications_detailed_format">Уведомления (%s)</string>
+    <string name="profile_notifications_show">Управление уведомлениями</string>
+    <string name="profile_notifications_help">Профили eSIM могут отправлять оператору уведомления о своей загрузке, удалении, включении или отключении. Здесь показана очередь таких уведомлений, ожидающих отправки.\n\nВ настройках можно указать, какие типы уведомлений отправлять автоматически. Учтите, что даже отправленное уведомление не удаляется из списка автоматически — это происходит только при нехватке места в очереди.\n\nЗдесь можно вручную отправить или удалить каждое ожидающее уведомление.</string>
+    <string name="profile_notification_operation_download">Загружен</string>
+    <string name="profile_notification_operation_delete">Удалён</string>
+    <string name="profile_notification_operation_enable">Включён</string>
+    <string name="profile_notification_operation_disable">Отключён</string>
+    <string name="profile_notification_process">Отправить</string>
+    <string name="profile_notification_delete">Удалить</string>
+
+    <string name="euicc_info">Сведения об eSIM</string>
+    <string name="euicc_info_activity_title">Сведения об eSIM (%s)</string>
+    <string name="euicc_info_access_mode">Способ доступа</string>
+    <string name="euicc_info_removable">Съёмная</string>
+    <string name="euicc_info_sku">Название продукта</string>
+    <string name="euicc_info_sn">Серийный номер продукта</string>
+    <string name="euicc_info_fw_ver">Версия прошивки продукта</string>
+    <string name="euicc_info_sgp22_version">Версия SGP.22</string>
+    <string name="euicc_info_sas_accreditation_number">Номер аккредитации SAS</string>
+    <string name="euicc_info_free_nvram">Свободная NVRAM (хранилище профилей eSIM)</string>
+    <string name="euicc_info_free_nvram_hint">(только для справки)</string>
+    <string name="euicc_info_ci_type">Издатель сертификата (CI)</string>
+    <string name="euicc_info_ci_gsma_live">Рабочий CI GSMA</string>
+    <string name="euicc_info_ci_gsma_test">Тестовый CI GSMA</string>
+    <string name="euicc_info_ci_unknown">Неизвестный CI eSIM</string>
+
+    <string name="euicc_memory_reset">Стереть eSIM</string>
+    <string name="euicc_memory_reset_title">Стереть eSIM</string>
+    <string name="euicc_memory_reset_message">Подтвердите удаление всех профилей на этом чипе и то, что вы понимаете необратимость этого действия.\n\nEID: %1$s\n\n%2$s</string>
+    <string name="euicc_memory_reset_hint_text">Введите здесь «%s» для подтверждения</string>
+    <string name="euicc_memory_reset_confirm_text">Я ПОДТВЕРЖДАЮ СТИРАНИЕ ЧИПА С EID, ОКАНЧИВАЮЩИМСЯ НА %s, И ПОНИМАЮ, ЧТО ЭТО НЕОБРАТИМО</string>
+    <string name="euicc_memory_reset_invoke_button">Стереть</string>
+
+    <!-- eSIM Info -->
+    <string name="euicc_info_yes">Да</string>
+    <string name="euicc_info_no">Нет</string>
+    <string name="euicc_info_unknown">Неизвестно</string>
+    <string name="euicc_info_unavailable">Нет данных</string>
+
+    <string name="logs_save">Сохранить</string>
+    <string name="logs_filename_template">Логи от %s</string>
+
+    <string name="developer_options_steps">До статуса разработчика осталось шагов: %d</string>
+    <string name="developer_options_enabled">Теперь вы разработчик!</string>
+
+    <string name="isdr_aid_list">Список ISD-R AID</string>
+    <string name="isdr_aid_list_saved">Свой список ISD-R AID сохранён.</string>
+    <string name="isdr_aid_list_restore_defaults">Сбросить</string>
+
+    <string name="pref_settings">Настройки</string>
+    <string name="pref_notifications">Уведомления</string>
+    <string name="pref_notifications_desc">Операции с профилями eSIM отправляют уведомления оператору. Здесь это поведение можно настроить.</string>
+    <string name="pref_notifications_download">Загрузка</string>
+    <string name="pref_notifications_download_desc">Отправлять уведомления о <i>загрузке</i> профилей</string>
+    <string name="pref_notifications_delete">Удаление</string>
+    <string name="pref_notifications_delete_desc">Отправлять уведомления об <i>удалении</i> профилей</string>
+    <string name="pref_notifications_switch">Переключение</string>
+    <string name="pref_notifications_switch_desc">Отправлять уведомления о <i>переключении</i> профилей\nУчтите, что этот тип уведомлений работает ненадёжно.</string>
+    <string name="pref_advanced">Дополнительно</string>
+    <string name="pref_advanced_disable_safeguard_removable_esim">Разрешить отключение и удаление активного профиля</string>
+    <string name="pref_advanced_disable_safeguard_removable_esim_desc">По умолчанию приложение не даёт отключить активный профиль на съёмной eSIM, установленной в устройстве, потому что <i>иногда</i> после этого карта становится недоступной.\nОтметьте этот пункт, чтобы <i>снять</i> такую защиту.</string>
+    <string name="pref_advanced_verbose_logging">Подробные логи</string>
+    <string name="pref_advanced_verbose_logging_desc">Включить подробные логи: они могут содержать конфиденциальные данные. После включения делитесь логами только с теми, кому доверяете.</string>
+    <string name="pref_advanced_force_tpdu_mode">Принудительный режим TPDU для USB-считывателей</string>
+    <string name="pref_advanced_force_tpdu_mode_desc">Принудительно использовать режим TPDU для всех USB-считывателей CCID. Включайте только если ваш USB-считыватель работает исключительно в режиме TPDU.</string>
+    <string name="pref_advanced_language">Язык</string>
+    <string name="pref_advanced_language_desc">Выбор языка приложения</string>
+    <string name="pref_advanced_logs">Логи</string>
+    <string name="pref_advanced_logs_desc">Просмотр последних отладочных логов приложения</string>
+    <string name="pref_advanced_http_proxy">HTTP-прокси</string>
+    <string name="pref_advanced_http_proxy_desc">HTTP-прокси для исходящих запросов</string>
+    <string name="pref_advanced_http_proxy_dialog_message">Укажите прокси в формате «http://&lt;хост&gt;:&lt;порт&gt;». Оставьте поле пустым, чтобы ОТКЛЮЧИТЬ прокси.</string>
+    <string name="pref_developer">Для разработчиков</string>
+    <string name="pref_developer_refresh_after_switch">Отправлять модему команду обновления</string>
+    <string name="pref_developer_refresh_after_switch_desc">Отправлять ли модему команду обновления после переключения профилей. Если приложение аварийно закрывается, попробуйте отключить этот параметр.</string>
+    <string name="pref_developer_unfiltered_profile_list">Показывать неотфильтрованный список профилей</string>
+    <string name="pref_developer_unfiltered_profile_list_desc">Включать в список нерабочие (не production) профили</string>
+    <string name="pref_developer_ignore_tls_certificate">Игнорировать сертификат TLS сервера SM-DP+</string>
+    <string name="pref_developer_ignore_tls_certificate_desc">Принимать любой сертификат TLS, используемый сервером RSP</string>
+    <string name="pref_developer_es10x_mss_desc">Глобальное значение ES10x MSS</string>
+    <string-array name="pref_developer_es10x_entry_keys">
+        <item>Высокая эффективность</item>
+        <item>Максимальная совместимость</item>
+    </string-array>
+    <string name="pref_developer_isdr_aid_list">Настроить список ISD-R AID</string>
+    <string name="pref_developer_isdr_aid_list_desc">Съёмные eSIM некоторых производителей используют собственный нестандартный ISD-R AID, из-за чего они недоступны сторонним приложениям. Приложение может попробовать нестандартные AID, добавленные в этот список, но их работа не гарантируется.</string>
+    <string name="pref_info">Информация</string>
+    <string name="pref_info_app_version">Версия приложения</string>
+    <string name="pref_info_website">Официальный сайт</string>
+    <string name="pref_info_source_code">Исходный код</string>
+</resources>

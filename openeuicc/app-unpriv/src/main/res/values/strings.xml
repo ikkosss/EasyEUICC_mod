@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name" translatable="false">EasyEUICC</string>
+    <string name="channel_name_format_unpriv" translatable="false">SIM %d</string>
+    <string name="channel_name_format_unpriv_se" translatable="false">SIM %d, SE %d</string>
+    <string name="compatibility_check">Compatibility Check</string>
+    <string name="open_sim_toolkit">Open SIM Toolkit</string>
+    <string name="shortcut_sim_toolkit">SIM Toolkit</string>
+    <string name="shortcut_sim_toolkit_with_slot">SIM Toolkit #%d</string>
+
+    <!-- Slot access diagnostics on the "no eUICC" placeholder -->
+    <string name="no_euicc_diagnostics_title">Slot access diagnostics:</string>
+    <string name="no_euicc_diagnostics_omapi_unavailable">OMAPI (android.se.omapi) is unavailable on this device.</string>
+    <string name="no_euicc_diagnostics_omapi_error">OMAPI could not be reached: %s</string>
+    <string name="no_euicc_diagnostics_no_readers">OMAPI reports no SIM reader on this device.</string>
+    <string name="no_euicc_diagnostics_slot_empty">no card detected</string>
+    <string name="no_euicc_diagnostics_slot_ok">access granted (ISD-R %s)</string>
+    <string name="no_euicc_diagnostics_slot_denied">access denied by the card: its ARA-M access rules do not list this build\'s signature</string>
+    <string name="no_euicc_diagnostics_slot_no_isdr">card present, but no ISD-R applet (not an eUICC)</string>
+    <string name="no_euicc_diagnostics_slot_error">error: %s</string>
+    <string name="no_euicc_diagnostics_signature">SHA-1 of this build\'s signature: %s</string>
+    <string name="no_euicc_diagnostics_hint_unofficial">A card that only allows the official EasyEUICC signature rejects any self-signed build. Use the official release, a card whose ARA-M contains the hash above, or a USB CCID reader.</string>
+
+    <!-- Settings -->
+    <string name="pref_developer_ara_m" translatable="false">ARA-M SHA-1</string>
+    <string name="pref_info_website_url" translatable="false">https://easyeuicc.org</string>
+
+    <!-- Toast -->
+    <string name="toast_ara_m_copied">ARA-M SHA-1 copied to clipboard</string>
+    <string name="toast_prompt_to_enable_sim_toolkit">Please ENABLE your \"%s\" application</string>
+
+    <!-- Quick Compatibility -->
+    <string name="quick_compatibility">Quick Compatibility Check</string>
+    <string name="quick_compatibility_compatible">Your smartphone can manage %s-compatible cards</string>
+    <string name="quick_compatibility_not_compatible">Your smartphone is not compatible with %s</string>
+    <string name="quick_compatibility_not_compatible_but_usb">Your smartphone is not fully compatible with %s. However, you can still use a USB smart card reader for near-full functionality.</string>
+    <string name="quick_compatibility_result_slots">Accessible slots: %s</string>
+    <string name="quick_compatibility_result_slots_isdr">ISD-R access: %s</string>
+    <string name="quick_compatibility_result_notes">Note: these results are for reference only. Even if a SIM slot is not listed above, it <i>may</i> be compatible as well once a SIM card is inserted.</string>
+    <string name="quick_compatibility_result_notes_incompatible">Note: if you currently do not have any SIM card inserted, try the compatibility check again after inserting one. Any SIM card will do.</string>
+    <string name="quick_compatibility_button_continue">Continue</string>
+    <string name="quick_compatibility_skip">Don\'t show this message again</string>
+    <string name="quick_compatibility_unknown">Unknown</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="compatibility_check">Проверка совместимости</string>
+    <string name="open_sim_toolkit">Открыть меню SIM-карты (STK)</string>
+    <string name="shortcut_sim_toolkit">Меню SIM-карты</string>
+    <string name="shortcut_sim_toolkit_with_slot">Меню SIM-карты №%d</string>
+
+    <!-- Slot access diagnostics on the "no eUICC" placeholder -->
+    <string name="no_euicc_diagnostics_title">Диагностика доступа к слотам:</string>
+    <string name="no_euicc_diagnostics_omapi_unavailable">OMAPI (android.se.omapi) недоступен на этом устройстве.</string>
+    <string name="no_euicc_diagnostics_omapi_error">Не удалось обратиться к OMAPI: %s</string>
+    <string name="no_euicc_diagnostics_no_readers">OMAPI не сообщает ни об одном SIM-считывателе на этом устройстве.</string>
+    <string name="no_euicc_diagnostics_slot_empty">карта не обнаружена</string>
+    <string name="no_euicc_diagnostics_slot_ok">доступ есть (ISD-R %s)</string>
+    <string name="no_euicc_diagnostics_slot_denied">карта отказала в доступе: в её правилах ARA-M нет подписи этой сборки</string>
+    <string name="no_euicc_diagnostics_slot_no_isdr">карта есть, но апплет ISD-R не найден (это не eUICC)</string>
+    <string name="no_euicc_diagnostics_slot_error">ошибка: %s</string>
+    <string name="no_euicc_diagnostics_signature">SHA-1 подписи этой сборки: %s</string>
+    <string name="no_euicc_diagnostics_hint_unofficial">Карта, разрешающая доступ только подписи официального EasyEUICC, отклоняет любую самостоятельно подписанную сборку. Используйте официальный релиз, карту, в ARA-M которой внесён хеш выше, или USB-считыватель CCID.</string>
+
+    <!-- Toast -->
+    <string name="toast_ara_m_copied">ARA-M SHA-1 скопирован в буфер обмена</string>
+    <string name="toast_prompt_to_enable_sim_toolkit">Включите приложение «%s»</string>
+
+    <!-- Quick Compatibility -->
+    <string name="quick_compatibility">Быстрая проверка совместимости</string>
+    <string name="quick_compatibility_compatible">Ваш смартфон может управлять картами, совместимыми с %s</string>
+    <string name="quick_compatibility_not_compatible">Ваш смартфон несовместим с %s</string>
+    <string name="quick_compatibility_not_compatible_but_usb">Ваш смартфон не полностью совместим с %s. Но вы всё равно можете использовать USB-считыватель смарт-карт и получить почти все возможности.</string>
+    <string name="quick_compatibility_result_slots">Доступные слоты: %s</string>
+    <string name="quick_compatibility_result_slots_isdr">Доступ к ISD-R: %s</string>
+    <string name="quick_compatibility_result_notes">Примечание: эти результаты приведены только для справки. Даже если слот SIM не указан выше, он <i>может</i> оказаться совместимым после установки в него SIM-карты.</string>
+    <string name="quick_compatibility_result_notes_incompatible">Примечание: если сейчас SIM-карта не установлена, вставьте любую SIM-карту и повторите проверку совместимости.</string>
+    <string name="quick_compatibility_button_continue">Продолжить</string>
+    <string name="quick_compatibility_skip">Больше не показывать это сообщение</string>
+    <string name="quick_compatibility_unknown">Неизвестно</string>
+</resources>

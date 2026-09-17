@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_euicc_priv">На этом устройстве не найдено eSIM.\nНа некоторых устройствах сначала нужно включить режим двух SIM-карт в меню этого приложения.</string>
+    <string name="channel_type_telephony_manager">TelephonyManager (привилегированный доступ)</string>
+
+    <string name="dsds">Две SIM-карты</string>
+
+    <string name="toast_dsds_switched">Режим DSDS переключён. Дождитесь перезапуска модема.</string>
+
+    <string name="footer_mep">Этот слот поддерживает несколько активных профилей (MEP). Чтобы включить или отключить эту функцию, воспользуйтесь инструментом «Сопоставление слотов».</string>
+
+    <string name="slot_mapping">Сопоставление слотов</string>
+    <string name="slot_mapping_logical_slot">Логический слот %d:</string>
+    <string name="slot_mapping_port">Слот %1$d, порт %2$d</string>
+    <string name="slot_mapping_help">В вашем телефоне %1$d логических и %2$d физических слотов для SIM.%3$s\n\nВыберите, какому физическому слоту и (или) «порту» должен соответствовать каждый логический слот. Учтите, что не все варианты сопоставления поддерживаются оборудованием.</string>
+    <string name="slot_mapping_help_mep">\n\nФизический слот %1$d поддерживает несколько активных профилей (MEP). Чтобы использовать эту функцию, назначьте его %2$d виртуальных «портов» разным логическим слотам, показанным выше.\n\nПри включённом MEP «порты» ведут себя в OpenEUICC как отдельные слоты eSIM, но с общим списком профилей.</string>
+    <string name="slot_mapping_help_dsds">\nРежим двух SIM-карт поддерживается, но отключён. Если в устройстве есть встроенный чип eSIM, по умолчанию он может быть неактивен. Измените сопоставление выше или включите режим двух SIM-карт, чтобы получить доступ к своей eSIM.</string>
+    <string name="slot_mapping_completed">Новое сопоставление слотов сохранено. Дождитесь, пока модем обновит слоты.</string>
+    <string name="slot_mapping_failure">Указанное сопоставление может быть недопустимым или не поддерживаться оборудованием.</string>
+
+    <string name="lui_title">Подключитесь к мобильной сети, загрузив eSIM</string>
+    <string name="lui_desc">Ваше устройство поддерживает eSIM. Чтобы подключиться к мобильной сети, загрузите eSIM, выпущенную оператором, или вставьте физическую SIM-карту.</string>
+    <string name="lui_skip">Пропустить</string>
+    <string name="lui_download">Загрузить eSIM</string>
+
+    <!-- Preference -->
+    <string name="pref_advanced_telephony_manager_removable">Всегда использовать TelephonyManager</string>
+    <string name="pref_advanced_telephony_manager_removable_desc">По умолчанию для съёмных eSIM используется только OMAPI — так же, как в непривилегированном режиме (то есть в EasyEUICC). На некоторых устройствах это работает плохо. Включите этот параметр, чтобы принудительно использовать TelephonyManager и для съёмных eSIM.</string>
+</resources>

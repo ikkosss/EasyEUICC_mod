@@ -1,0 +1,16 @@
+/.gradle
+/captures
+/build
+
+# Configuration files
+
+/keystore.properties
+/local.properties
+
+# macOS
+
+.DS_Store
+
+# Submodule sources fetched manually (see ../BUILD.md)
+/libs/lpac-jni/src/main/jni/lpac/
+/libs/lpac-jni/src/main/jni/cjson/
